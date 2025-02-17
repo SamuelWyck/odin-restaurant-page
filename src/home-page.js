@@ -1,4 +1,4 @@
-import homeChicken from "./imgs/chicken.jpeg";
+import homeChicken from "./imgs/home.jpeg";
 
 const homePage = (function() {
     const contentDiv = document.querySelector("#content");
