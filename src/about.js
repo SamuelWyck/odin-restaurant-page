@@ -4,7 +4,7 @@ import currentPic from "./imgs/current.jpeg";
 
 const about = (function() {
     const contentDiv = document.querySelector("#content");
-    const founderText = "";
+    const founderText = "In 1646, in a little village outside of Paris, our founder, Monsieur le Coq, made a groundbreaking discovery. While experimenting with new chicken recipes he realized that using rubber chickens would make sure his food was always al dente. With this discovery Monsieur le Coq immediately opened a restaurant to sell food made with rubber chickens. The restaurant was a huge success and Monsieur le Coq was the proud owner for 67.5 years before his death. His final wish was that his family continue running the restaurant so that the art of rubber chicken cooking would not be lost to the world.";
     const currentDayText = "";
 
 
