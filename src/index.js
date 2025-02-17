@@ -16,7 +16,7 @@ const pageHandler = (function() {
         if (event.target.matches(".banner")) {
             showPage(home);
         } else if (event.target.matches(".menu-btn")) {
-
+            showPage(menu);
         } else if (event.target.matches(".order-btn")) {
 
         } else if (event.target.matches("about-btn")) {
