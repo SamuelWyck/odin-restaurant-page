@@ -1,6 +1,7 @@
 import "./styles.css";
 import homePage from "./home-page.js";
 import menuPage from "./menu.js";
+import aboutPage from "./about.js";
 
 
 const pageHandler = (function() {
