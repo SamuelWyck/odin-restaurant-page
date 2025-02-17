@@ -1,6 +1,7 @@
 import saladPic from "./imgs/salad.jpeg";
 import soupPic from "./imgs/soup1.jpeg";
 import sandwichPic from "./imgs/sandwich.jpeg";
+import roastPic from "./imgs/roast1.jpeg";
 
 
 const menu = (function() {
@@ -36,13 +37,13 @@ const menu = (function() {
         grid.appendChild(createGridItem(saladPic, "Chicken Salad"));
         grid.appendChild(createGridItem(soupPic, "Chicken Soup"));
         grid.appendChild(createGridItem(sandwichPic, "Chicken Sandwich"));
-        
+        grid.appendChild(createGridItem(roastPic, "Roast Chicken"));
 
-
+        return grid;
     };
 
     let createPage = function() {
-
+        
     };
 
     return {"createPage": createPage};
