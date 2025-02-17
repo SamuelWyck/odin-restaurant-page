@@ -16,6 +16,16 @@ const location = (function() {
         return para;
     };
 
+    function createImg(img) {
+        const imgElement = document.createElement("img");
+        imgElement.src = img;
+        return imgElement;
+    };
+
+    function createGrid() {
+
+    };
+
     let createPage = function() {
         const locationDiv = document.createElement("div");
         locationDiv.classList.add("location-content");
