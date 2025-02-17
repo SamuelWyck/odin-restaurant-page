@@ -17,6 +17,7 @@ const menu = (function() {
 
     function createGridItem(img, title) {
         const itemDiv = document.createElement("div");
+        itemDiv.classList.add("grid-item");
         
         const imgElement = document.createElement("img");
         imgElement.src = img;
