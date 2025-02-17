@@ -2,6 +2,7 @@ import "./styles.css";
 import homePage from "./home-page.js";
 import menuPage from "./menu.js";
 import aboutPage from "./about.js";
+import locationPage from "./location.js";
 
 
 const pageHandler = (function() {
