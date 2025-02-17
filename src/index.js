@@ -1,18 +1,20 @@
 import "./styles.css";
 import homePage from "./home-page";
+import menuPage from "./menu.js";
 
 
 const pageHandler = (function() {
     const header = document.querySelector("header");
     const contentDiv = document.querySelector("#content");
     const home = homePage;
+    const menu = menuPage;
 
-    showHomePage();
-    
+    showPage(home);
+
 
     header.addEventListener("click", function(event) {
         if (event.target.matches(".banner")) {
-            showHomePage();
+            showPage(home);
         } else if (event.target.matches(".menu-btn")) {
 
         } else if (event.target.matches(".order-btn")) {
@@ -22,9 +24,9 @@ const pageHandler = (function() {
         }
     });
 
-    function showHomePage() {
+    function showPage(page) {
         clearContent();
-        home.createPage();
+        page.createPage();
     };
 
     function clearContent() {
