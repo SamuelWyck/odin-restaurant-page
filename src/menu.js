@@ -43,7 +43,13 @@ const menu = (function() {
     };
 
     let createPage = function() {
-        
+        const menuDiv = document.createElement("div");
+        menuDiv.classList.add("menu-content");
+
+        menuDiv.appendChild(createTitle());
+        menuDiv.appendChild(createGrid());
+
+        contentDiv.appendChild(menuDiv);
     };
 
     return {"createPage": createPage};
