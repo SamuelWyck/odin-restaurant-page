@@ -20,7 +20,7 @@ const pageHandler = (function() {
             showPage(home);
         } else if (event.target.matches(".menu-btn")) {
             showPage(menu);
-        } else if (event.target.matches(".order-btn")) {
+        } else if (event.target.matches(".location-btn")) {
 
         } else if (event.target.matches(".about-btn")) {
             showPage(about);
