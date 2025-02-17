@@ -169,3 +169,16 @@ footer {
     font-weight: bold;
     margin-top: .4rem;
 }
+
+@keyframes shake {
+    0% { transform:rotate(0deg); }
+    33% { transform: rotate(5deg); }
+    66% { transform: rotate(-5deg); }
+    100% { transform:rotate(0deg); }
+}
+
+.grid-item:hover {
+    animation-name: shake;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}
