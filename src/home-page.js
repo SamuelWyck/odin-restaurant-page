@@ -4,6 +4,12 @@ const homePage = (function() {
     const contentDiv = document.querySelector("#content");
 
 
+    let createTagLineElement = function() {
+        const para = document.createElement("p");
+        para.textContent = "Family owned since 1647. Qualtiy service with bouncy chicken.";
+        return para
+    };
+
     let createImgElement = function() {
         const imgDiv = document.createElement("div");
         imgDiv.classList.add("img-banner");
@@ -11,6 +17,7 @@ const homePage = (function() {
         const chickenImg = document.createElement("img");
         chickenImg.src = homeChicken;
 
+        imgDiv.appendChild(createTagLineElement());
         imgDiv.appendChild(chickenImg);
 
         return imgDiv;
