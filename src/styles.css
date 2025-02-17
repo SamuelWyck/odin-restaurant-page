@@ -39,6 +39,7 @@ header {
 }
 
 .branding {
+    cursor: pointer;
     display: flex;
     gap: 2rem;
 }
