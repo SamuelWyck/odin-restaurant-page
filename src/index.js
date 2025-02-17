@@ -1,5 +1,5 @@
 import "./styles.css";
-import homePage from "./home-page";
+import homePage from "./home-page.js";
 import menuPage from "./menu.js";
 
 
