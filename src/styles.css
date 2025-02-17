@@ -34,6 +34,8 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     gap: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .branding {
@@ -95,4 +97,31 @@ nav button {
 
 nav button:hover {
     border-color: #D6EFFF;
+}
+
+#content {
+    background-color: #6C809A;
+    padding: 4rem 0;
+}
+
+.img-banner {
+    background-color: rgb(0, 0, 0, .8);
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.img-banner img {
+    width: 400px;
+    box-shadow: 0px 0px 15px 4px black;
+}
+
+.img-banner > p {
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    font-size: clamp(1rem, 4vw, 2rem);
+    max-width: 20ch;
+    text-shadow: 2px 2px 10px black;
 }
