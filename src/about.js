@@ -14,7 +14,7 @@ const about = (function() {
         return imgElement;
     };
 
-    function createPara(text) {
+    function createParaElement(text) {
         const para = document.createElement("p");
         para.innerText = text;
         return para;
@@ -24,7 +24,7 @@ const about = (function() {
         const item = document.createElement("div");
         item.classList.add("about-grid-item");
         
-        const contentElement = null;
+        let contentElement = null;
         if (!img) {
             contentElement = createParaElement(content);
         } else {
@@ -50,7 +50,7 @@ const about = (function() {
         const aboutDiv = document.createElement("div");
         aboutDiv.classList.add("about-content");
 
-        const titlePara = createPara("Our Story");
+        const titlePara = createParaElement("Our Story");
         const grid = createGrid();
 
         aboutDiv.appendChild(titlePara);

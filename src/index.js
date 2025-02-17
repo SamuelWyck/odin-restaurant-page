@@ -9,6 +9,7 @@ const pageHandler = (function() {
     const contentDiv = document.querySelector("#content");
     const home = homePage;
     const menu = menuPage;
+    const about = aboutPage;
 
     showPage(home);
 
@@ -20,8 +21,8 @@ const pageHandler = (function() {
             showPage(menu);
         } else if (event.target.matches(".order-btn")) {
 
-        } else if (event.target.matches("about-btn")) {
-
+        } else if (event.target.matches(".about-btn")) {
+            showPage(about);
         }
     });
 
