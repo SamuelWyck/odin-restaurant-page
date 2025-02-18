@@ -18,7 +18,7 @@ const pageHandler = (function() {
 
 
     header.addEventListener("click", function(event) {
-        if (event.target.matches(".banner")) {
+        if (event.target.matches(".banner") || event.target.matches(".branding") || event.target.matches(".logo-img")) {
             showPage(home);
         } else if (event.target.matches(".menu-btn")) {
             showPage(menu);
@@ -26,7 +26,7 @@ const pageHandler = (function() {
             showPage(location);
         } else if (event.target.matches(".about-btn")) {
             showPage(about);
-        }
+        } 
     });
 
     function showPage(page) {
