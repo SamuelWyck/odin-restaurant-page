@@ -3,7 +3,7 @@ import FrenchPic from "./imgs/french.jpeg";
 
 
 const location = (function() {
-    const contentDiv = document.querySelector("div");
+    const contentDiv = document.querySelector("#content");
     const usAddress1 = "145 West 53rd Street, New York, New York 10019";
     const usAddress2 = "3655 South Las Vegas Blvd South, Las Vegas, Nevada 89109";
     const frenchAddress1 = "52 Rue Francois Miron, 75004 Paris, France";
@@ -39,7 +39,7 @@ const location = (function() {
 
         let element = null;
         if (img) {
-            element = createImg(img);
+            element = createImg(content);
         } else {
             element = createParaElement(content);
         }
