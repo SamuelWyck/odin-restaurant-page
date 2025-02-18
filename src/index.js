@@ -11,6 +11,8 @@ const pageHandler = (function() {
     const home = homePage;
     const menu = menuPage;
     const about = aboutPage;
+    const location = locationPage;
+
 
     showPage(home);
 
@@ -21,7 +23,7 @@ const pageHandler = (function() {
         } else if (event.target.matches(".menu-btn")) {
             showPage(menu);
         } else if (event.target.matches(".location-btn")) {
-
+            showPage(location);
         } else if (event.target.matches(".about-btn")) {
             showPage(about);
         }
