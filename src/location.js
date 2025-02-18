@@ -10,14 +10,14 @@ const location = (function() {
     const frenchAddress2 = "Parc du Chateau de, 78000 Versailles, France";
 
     const contentMap = {
-        "0": [usAddress1, false],
-        "1": [USPic, true],
-        "2": [usAddress2, false],
-        "3": [USPic, true],
-        "4": [frenchAddress1, false],
-        "5": [FrenchPic, true],
-        "6": [frenchAddress2, false],
-        "7": [FrenchPic, true]
+        "0": [USPic, true],
+        "1": [usAddress1, false],
+        "2": [USPic, true],
+        "3": [usAddress2, false],
+        "4": [FrenchPic, true],
+        "5": [frenchAddress1, false],
+        "6": [FrenchPic, true],
+        "7": [frenchAddress2, false]
     };
 
 
@@ -35,13 +35,15 @@ const location = (function() {
 
     function createGridItem(content, img=false) {
         const item = document.createElement("div");
-        item.classList.add("locations-grid-item");
+        // item.classList.add("locations-grid-item");
 
         let element = null;
         if (img) {
             element = createImg(content);
+            item.classList.add("locations-grid-item-img");
         } else {
             element = createParaElement(content);
+            item.classList.add("locations-grid-item-para");
         }
 
         item.appendChild(element);
